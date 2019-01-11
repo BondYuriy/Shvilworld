@@ -1,0 +1,18 @@
+.logo-box {
+  width: 120px;
+
+  & img {
+    display: block;
+    width: 89px;
+    height: 89px;
+    margin: 0 auto 10px auto;
+  }
+
+  & span {
+    color: $white-text;
+    font-family: $Rubik;
+    font-size: 25px;
+    font-weight: $Medium;
+    text-align: center;
+  }
+}

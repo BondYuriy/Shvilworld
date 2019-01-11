@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+}
+
+.btn-big {
+  height: 38px;
+  padding: 0 60px;
+  border-radius: 20px;
+  background-color: $orange;
+  color: $white-text;
+  line-height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-text;
+  }
+}
