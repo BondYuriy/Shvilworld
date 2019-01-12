@@ -1,3 +1,87 @@
-.search {
-  height: 1000px;
+.search-container {
+  position: relative;
+
+  & .search-form {
+    width: 68%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    top: -65px;
+    z-index: 10;
+
+    & .search-select {
+      flex: 0 0 19%;
+      margin-right: 6%;
+      height: 35px;
+      position: relative;
+
+      & .search-icon {
+        width: 20px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+
+      & .form-control {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        appearance: none;
+        background: transparent;
+        outline: 0;
+        box-shadow: none;
+        width: 100%;
+        border-bottom: 1px solid #bebebe;
+        color: #393939;
+        font-size: 20px;
+        font-weight: $Medium;
+
+        & option:hover {
+          background-color: #fff;
+          background-color: $orange;
+        }
+      }
+    }
+
+    & .btn-form {
+      border: 0;
+      outline: 0;
+      display: block;
+      flex: 0 0 151px;
+      height: 127px;
+      background-color: $orange;
+      color: $white-text;
+      margin-right: 8%;
+
+      & img {
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        margin-bottom: 5px;
+      }
+
+      & span {
+        display: block;
+        font-size: 20px;
+      }
+
+      &:hover {
+        background-color: #f09c00;
+
+        & span {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+.flip img {
+  transform: rotatex(-180deg);
 }

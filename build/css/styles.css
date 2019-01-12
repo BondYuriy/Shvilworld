@@ -6353,7 +6353,7 @@ a.text-dark:focus {
 
 body {
 	font-family: "Rubik", sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 16px;
 	color: #5f5a5a;
 	text-align: justify;
@@ -6405,6 +6405,37 @@ a:hover {
 
 .btn-big:hover {
 	opacity: 0.8;
+	color: #fff;
+}
+
+.btn-small {
+	height: 30px;
+	padding: 0 30px;
+	border-radius: 20px;
+	background-color: #ffa700;
+	color: #fff;
+	line-height: 30px;
+}
+
+.btn-small:hover {
+	opacity: 0.8;
+	color: #fff;
+}
+
+.btn-orange-light {
+	display: block;
+	width: 160px;
+	margin: auto;
+	height: 30px;
+	border-radius: 20px;
+	border: 1px solid #ffa700;
+	line-height: 28px;
+	color: #ffa700;
+	padding: 0 40px;
+}
+
+.btn-orange-light:hover {
+	background-color: #ffa700;
 	color: #fff;
 }
 
@@ -6519,8 +6550,288 @@ a:hover {
 	background-color: #fff;
 }
 
-.search {
-	height: 1000px;
+.search-container {
+	position: relative;
+}
+
+.search-container .search-form {
+	width: 68%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: -65px;
+	z-index: 10;
+}
+
+.search-container .search-form .search-select {
+	flex: 0 0 19%;
+	margin-right: 6%;
+	height: 35px;
+	position: relative;
+}
+
+.search-container .search-form .search-select .search-icon {
+	width: 20px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+.search-container .search-form .search-select .form-control {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	outline: 0;
+	box-shadow: none;
+	width: 100%;
+	border-bottom: 1px solid #bebebe;
+	color: #393939;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.search-container .search-form .search-select .form-control option:hover {
+	background-color: #fff;
+	background-color: #ffa700;
+}
+
+.search-container .search-form .btn-form {
+	border: 0;
+	outline: 0;
+	display: block;
+	flex: 0 0 151px;
+	height: 127px;
+	background-color: #ffa700;
+	color: #fff;
+	margin-right: 8%;
+}
+
+.search-container .search-form .btn-form img {
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	margin-bottom: 5px;
+}
+
+.search-container .search-form .btn-form span {
+	display: block;
+	font-size: 20px;
+}
+
+.search-container .search-form .btn-form:hover {
+	background-color: #f09c00;
+}
+
+.search-container .search-form .btn-form:hover span {
+	color: #5f5a5a;
+}
+
+.flip img {
+	-webkit-transform: rotatex(-180deg);
+	transform: rotatex(-180deg);
+}
+
+.planner-slider {
+	padding-top: 132px;
+	position: relative;
+}
+
+.planner-slider .mount {
+	width: 841px;
+	height: 463px;
+	background-image: url("../../img/mount.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -250px;
+	top: 120px;
+}
+
+.planner-slider .title {
+	color: #000;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 34px;
+}
+
+.planner-slider .title::before {
+	display: inline-block;
+	content: "";
+	width: 63px;
+	height: 63px;
+	background-image: url("../img/world-icon.svg");
+	background-position: center;
+	vertical-align: middle;
+	margin-left: 24px;
+}
+
+.planner-slider .slider-2 {
+	margin-bottom: 44px;
+}
+
+.planner-slider .slider-2 .owl-nav {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: -65px;
+}
+
+.planner-slider .slider-2 .owl-nav .owl-next,
+.planner-slider .slider-2 .owl-nav .owl-prev {
+	width: 40px;
+	height: 40px;
+}
+
+.planner-slider .slider-2 .owl-nav .owl-prev {
+	background-image: url("../img/next-icon.svg");
+	margin-left: 10px;
+}
+
+.planner-slider .slider-2 .owl-nav .owl-next {
+	background-image: url("../img/prev-icon.svg");
+}
+
+.planner-slider .slider-2 .owl-dots {
+	width: 0;
+	height: 0;
+	margin: 0;
+}
+
+.planner-slider .slider-2 .owl-stage-outer {
+	overflow: hidden;
+}
+
+.planner-slider .slider-2 .item {
+	background-color: palevioletred;
+	height: 358px;
+}
+
+.planner-card {
+	position: relative;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+	height: 100%;
+}
+
+.planner-card::before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: linear-gradient(179deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.75) 100%);
+	opacity: 0;
+	z-index: 20;
+}
+
+.planner-card::after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: linear-gradient(179deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.41) 100%);
+	z-index: 10;
+}
+
+.planner-card .planner-card_img {
+	display: block;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.planner-card span {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: rgba(10, 10, 10, 0.85);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 32px;
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	z-index: 100;
+}
+
+.planner-card .planner-card_info {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 300px;
+	z-index: 30;
+}
+
+.planner-card .planner-card_info h3 {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 500;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+	margin-bottom: 40px;
+}
+
+.planner-card .planner-card_info .planner-card_box {
+	display: none;
+	transition: 1s;
+}
+
+.planner-card .planner-card_info .planner-card_box p {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.planner-card .planner-card_info .planner-card_box .planner-icon_box {
+	margin: 40px 0 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.planner-card .planner-card_info .planner-card_box .planner-icon_box img {
+	display: block;
+	width: 37px;
+	height: 37px;
+	margin-left: 20px;
+}
+
+.planner-card .planner-card_info .planner-card_box .planner-icon_box img:last-child {
+	margin-left: 0;
+}
+
+.planner-card:hover::before {
+	opacity: 1;
+}
+
+.planner-card:hover .planner-card_info {
+	top: 50px;
+}
+
+.planner-card:hover .planner-card_info h3 {
+	border-bottom: 2px solid white;
+}
+
+.planner-card:hover .planner-card_info .planner-card_box {
+	display: block;
+}
+
+.planner-card:hover .planner-card_info .planner-card_box .planner-icon_box {
+	margin: 40px 0 30px 0;
 }
 
 .header {
@@ -6564,7 +6875,7 @@ a:hover {
 	color: #fff;
 	font-family: "Rubik", sans-serif;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	position: relative;
@@ -6576,6 +6887,10 @@ a:hover {
 
 .header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .active {
 	color: #ffa700;
+}
+
+main {
+	height: 1000px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

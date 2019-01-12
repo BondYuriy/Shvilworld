@@ -13,6 +13,21 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(".slider-2").owlCarousel({
+    rtl: true,
+    loop: true,
+    margin: 29,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      1200: {
+        items: 4
+      }
+    }
+  });
 });
 
 //===================================================
@@ -32,6 +47,12 @@ $(function() {
 
 $(".navbar-toggler").click(function() {
   $(this).toggleClass("open");
+});
+
+$(".search-select").click(function() {
+  $(this)
+    .children(".search-icon")
+    .toggleClass("flip");
 });
 
 //===================================================
