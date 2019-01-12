@@ -6650,7 +6650,7 @@ a:hover {
 .planner-slider .mount {
 	width: 841px;
 	height: 463px;
-	background-image: url("../../img/mount.png");
+	background-image: url("../img/mount.png");
 	background-repeat: no-repeat;
 	position: absolute;
 	right: -250px;
