@@ -28,6 +28,24 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(".slider-3").owlCarousel({
+    rtl: true,
+    loop: true,
+    margin: 28,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1200: {
+        items: 2
+      }
+    }
+  });
 });
 
 //===================================================

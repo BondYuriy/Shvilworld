@@ -1,0 +1,89 @@
+.footer {
+  position: relative;
+
+  .footer-nav {
+    background-color: #3c3c3c;
+    padding: 35px 0;
+
+    & .logo {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      bottom: -80px;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & .nav {
+      padding-right: 122px;
+
+      & ul {
+        display: flex;
+
+        & li {
+          margin-left: 26px;
+
+          &:last-child {
+            margin-left: 0;
+          }
+
+          & a {
+            color: $white-text;
+            font-size: 16px;
+            font-weight: $Regular;
+
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+
+        & .active a {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  & .footer-copyright {
+    background-color: #343434;
+    padding: 15px 0;
+
+    & .footer-copyright_box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $white-text;
+      font-size: 20px;
+      font-weight: $Medium;
+
+      & p {
+        padding-right: 122px;
+      }
+
+      & .social ul li {
+        height: 50px; //========????????????
+
+        & a svg {
+          fill: #1c1c1c;
+        }
+
+        & .fa-facebook svg:hover {
+          fill: #3b5999;
+        }
+
+        & .fa-youtube svg:hover {
+          fill: #cd201f;
+        }
+
+        & .fa-instagram svg:hover {
+          fill: #e4405f;
+        }
+      }
+    }
+  }
+}
