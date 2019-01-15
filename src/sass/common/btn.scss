@@ -16,6 +16,20 @@
   }
 }
 
+.btn-big_sup {
+  height: 46px;
+  padding: 0 80px;
+  border-radius: 30px;
+  background-color: $orange;
+  color: $white-text;
+  line-height: 46px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-text;
+  }
+}
+
 .btn-small {
   height: 30px;
   padding: 0 30px;

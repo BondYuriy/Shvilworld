@@ -1,0 +1,86 @@
+.form-wrapper {
+  background-image: url("../img/form-bi.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 178px 0 150px 0;
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      179deg,
+      #fafafa 0%,
+      rgba(250, 250, 250, 0.78) 39%,
+      rgba(250, 250, 250, 0.55) 72%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+.form-box {
+  & h2 {
+    color: $black-text;
+    font-size: $h2;
+    font-weight: $Medium;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  & form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & input {
+      border: 0;
+      border-radius: 0;
+      outline: none;
+      flex: 0 0 32%;
+      height: 47px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      border-radius: 25px;
+      background-color: $white;
+      font-size: 20px;
+      padding: 0 20px;
+      margin-left: 2%;
+      margin-bottom: 39px;
+
+      &::placeholder {
+        font-size: 20px;
+      }
+
+      &:nth-last-child(3n + 3) {
+        margin-left: 0;
+      }
+    }
+
+    & textarea {
+      border: 0;
+      border-radius: 0;
+      outline: none;
+      resize: none;
+      flex: 0 0 100%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      border-radius: 25px;
+      background-color: $white;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+
+      &::placeholder {
+        font-size: 20px;
+      }
+    }
+
+    & button {
+      flex: 0 0 18%;
+      margin: auto;
+    }
+  }
+}

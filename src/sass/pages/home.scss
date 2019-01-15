@@ -1,5 +1,4 @@
 .service-wrapper {
-  // min-height: 865px;
   background-image: url("../img/section-bi-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,85 +21,12 @@
       rgba(255, 255, 255, 0) 100%
     );
   }
-}
 
-.service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0 200px 0;
+  & .service {
+    padding: 20px 0 200px 0;
 
-  & .service-block {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 200px;
-
-    & .service-article {
-      flex: 0 0 60%;
-      font-size: 14px;
-      font-weight: $Regular;
-      line-height: 22px;
-
-      & h2 {
-        color: $black-text;
-        font-size: $h2;
-        font-weight: $Medium;
-        margin-bottom: 20px;
-
-        &::before {
-          display: inline-block;
-          content: "";
-          width: 47px;
-          height: 49px;
-          vertical-align: middle;
-          margin-left: 29px;
-          background-image: url("../img/logo-orange.svg");
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-
-      & .btn {
-        margin-top: 20px;
-      }
+    & .service-block {
+      margin-bottom: 200px;
     }
-
-    & .service-options {
-      flex: 0 0 35%;
-      display: flex;
-      flex-wrap: wrap;
-
-      & .service-options_item {
-        flex: 0 0 50%;
-
-        & .service-options_icon {
-          width: 115px;
-          height: 115px;
-          border-radius: 50%;
-          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
-          background-color: #ffffff;
-          opacity: 0.85;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          margin: 0 auto 15px auto;
-        }
-
-        & h5 {
-          color: #1f1f1f;
-          font-size: $h5;
-          font-weight: $Regular;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  & h1 {
-    color: $black-text;
-    font-size: $h1;
-    font-weight: $Medium;
-    margin-bottom: 20px;
   }
 }
