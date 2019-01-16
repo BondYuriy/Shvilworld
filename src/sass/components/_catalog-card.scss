@@ -1,0 +1,49 @@
+.catalog-card {
+  height: 575px; //================================
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  background-color: $white;
+  text-align: center;
+  overflow: hidden;
+
+  & .catalog-card_img {
+    height: 358px; //===============================
+    position: relative;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(93, 43, 0, 0.69) 100%
+      );
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    & h3 {
+      color: $white-text;
+      font-size: $h3;
+      font-weight: $Medium;
+      position: absolute;
+      left: 11px;
+      right: 11px;
+      bottom: 13px;
+      z-index: 2;
+    }
+  }
+
+  & .catalog-card_info {
+    padding: 10px 24px;
+  }
+}
