@@ -62,15 +62,15 @@
     }
 
     & .owl-stage-outer {
-      overflow: hidden; //=============?????????
+      overflow: visible; //=============?????????
 
-      // & .owl-stage .owl-item {
-      //   opacity: 0.5;
-      // }
+      & .owl-stage .owl-item {
+        opacity: 0.3;
+      }
 
-      // & .owl-stage .active {
-      //   opacity: 1;
-      // }
+      & .owl-stage .active {
+        opacity: 1;
+      }
     }
 
     & .item {

@@ -44,4 +44,16 @@
     height: 0;
     margin: 0;
   }
+
+  & .owl-stage-outer {
+    overflow: visible; //=============?????????
+
+    & .owl-stage .owl-item {
+      opacity: 0.3;
+    }
+
+    & .owl-stage .active {
+      opacity: 1;
+    }
+  }
 }

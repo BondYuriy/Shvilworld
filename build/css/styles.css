@@ -6721,7 +6721,15 @@ a:hover {
 }
 
 .planner-slider .slider-2 .owl-stage-outer {
-	overflow: hidden;
+	overflow: visible;
+}
+
+.planner-slider .slider-2 .owl-stage-outer .owl-stage .owl-item {
+	opacity: 0.3;
+}
+
+.planner-slider .slider-2 .owl-stage-outer .owl-stage .active {
+	opacity: 1;
 }
 
 .planner-slider .slider-2 .item {
@@ -6975,6 +6983,18 @@ a:hover {
 	width: 0;
 	height: 0;
 	margin: 0;
+}
+
+.comments-slidder .owl-stage-outer {
+	overflow: visible;
+}
+
+.comments-slidder .owl-stage-outer .owl-stage .owl-item {
+	opacity: 0.3;
+}
+
+.comments-slidder .owl-stage-outer .owl-stage .active {
+	opacity: 1;
 }
 
 .comments-card {
@@ -7673,6 +7693,10 @@ a:hover {
 
 .footer .footer-copyright .footer-copyright_box .social ul li .fa-instagram svg:hover {
 	fill: #e4405f;
+}
+
+.wrapper {
+	overflow: hidden;
 }
 
 .service-wrapper {
