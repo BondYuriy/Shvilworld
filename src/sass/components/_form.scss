@@ -59,6 +59,10 @@
       &:nth-last-child(3n + 3) {
         margin-left: 0;
       }
+
+      &:focus {
+        background-color: rgba(255, 167, 0, 0.3);
+      }
     }
 
     & textarea {
@@ -75,6 +79,10 @@
 
       &::placeholder {
         font-size: 20px;
+      }
+
+      &:focus {
+        background-color: rgba(255, 167, 0, 0.3);
       }
     }
 

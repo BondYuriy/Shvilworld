@@ -6999,6 +6999,8 @@ a:hover {
 
 .comments-card {
 	display: flex;
+	height: 100%;
+	overflow: hidden;
 }
 
 .comments-card .comments-card_img {
@@ -7034,20 +7036,22 @@ a:hover {
 	flex: 0 0 50%;
 	font-size: 14px;
 	font-weight: 400;
-	padding: 27px 14px 0 10px;
+	padding: 14px 10px;
 }
 
 .comments-card .comments-card_info h5 {
 	color: #1f1f1f;
 	font-size: 16px;
 	font-weight: 500;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 .comments-card .comments-card_info .date {
+	display: block;
 	color: #808080;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 400;
+	margin-bottom: 10px;
 }
 
 .comments-card .comments-card_info .date::before {
@@ -7061,11 +7065,11 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 	vertical-align: middle;
-	margin-bottom: 10px;
 }
 
 .comments-card .comments-card_info p {
 	line-height: 19px;
+	margin-bottom: 10px;
 }
 
 .comments-card .comments-card_info p span {
@@ -7414,6 +7418,10 @@ a:hover {
 	margin-left: 0;
 }
 
+.form-box form input:focus {
+	background-color: rgba(255, 167, 0, 0.3);
+}
+
 .form-box form textarea {
 	border: 0;
 	border-radius: 0;
@@ -7437,6 +7445,10 @@ a:hover {
 
 .form-box form textarea::placeholder {
 	font-size: 20px;
+}
+
+.form-box form textarea:focus {
+	background-color: rgba(255, 167, 0, 0.3);
 }
 
 .form-box form button {

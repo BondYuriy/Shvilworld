@@ -17,11 +17,14 @@ $(document).ready(function() {
   $(".slider-2").owlCarousel({
     rtl: true,
     loop: true,
-    margin: 29,
+    margin: 10,
     nav: true,
     responsive: {
       0: {
         items: 1
+      },
+      600: {
+        items: 3
       },
       1200: {
         items: 4

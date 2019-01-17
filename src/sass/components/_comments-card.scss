@@ -1,5 +1,7 @@
 .comments-card {
   display: flex;
+  height: 100%;
+  overflow: hidden;
 
   & .comments-card_img {
     flex: 0 0 50%;
@@ -34,19 +36,21 @@
     flex: 0 0 50%;
     font-size: 14px;
     font-weight: $Regular;
-    padding: 27px 14px 0 10px;
+    padding: 14px 10px;
 
     & h5 {
       color: $title-color;
       font-size: $h5;
       font-weight: $Medium;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     & .date {
+      display: block;
       color: $date-color;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: $Regular;
+      margin-bottom: 10px;
 
       &::before {
         display: inline-block;
@@ -59,12 +63,12 @@
         background-position: center;
         background-size: cover;
         vertical-align: middle;
-        margin-bottom: 10px;
       }
     }
 
     & p {
       line-height: 19px;
+      margin-bottom: 10px;
 
       & span {
         display: block;
