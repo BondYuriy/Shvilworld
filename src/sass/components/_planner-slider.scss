@@ -86,6 +86,28 @@
 
 @media (max-width: 991px) {
   .planner-slider {
+    padding-top: 60px;
+
+    & .mount {
+      display: none;
+    }
+
+    & .title {
+      margin-bottom: 70px;
+    }
+
+    & .slider-2 .owl-stage-outer {
+      overflow: hidden;
+
+      & .owl-stage .owl-item {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .planner-slider {
     & .mount {
       width: 841px;
       height: 463px;

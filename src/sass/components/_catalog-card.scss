@@ -48,6 +48,35 @@
   }
 }
 
+@media (max-width: 575px) {
+  .catalog-card .catalog-card_img {
+    height: 355px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-background .product-background_info ul {
+    flex-wrap: wrap;
+
+    & li {
+      flex: 0 0 50%;
+      margin-bottom: 20px;
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .catalog-card {
+    height: auto;
+
+    & .catalog-card_img {
+      height: 620px;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .catalog-card {
     height: 600px;

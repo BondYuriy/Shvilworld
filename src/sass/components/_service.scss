@@ -78,6 +78,13 @@
   }
 }
 
+@media (max-width: 575px) {
+  .service h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 991px) {
   .service {
     padding: 20px 0 70px 0;

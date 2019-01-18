@@ -81,6 +81,10 @@
       }
     }
   }
+
+  .navbar-collapse {
+    padding: 20px 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -229,7 +233,4 @@
       }
     }
   }
-}
-
-@media (min-width: 1200px) {
 }

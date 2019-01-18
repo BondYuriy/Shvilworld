@@ -76,3 +76,20 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .comments-card .comments-card_img {
+    height: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  .comments-card {
+    flex-direction: column;
+
+    & .comments-card_img {
+      flex: 0 0 100%;
+      height: 475px;
+    }
+  }
+}
