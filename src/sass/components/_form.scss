@@ -49,15 +49,10 @@
       background-color: $white;
       font-size: 20px;
       padding: 0 20px;
-      margin-left: 2%;
       margin-bottom: 39px;
 
       &::placeholder {
         font-size: 20px;
-      }
-
-      &:nth-last-child(3n + 3) {
-        margin-left: 0;
       }
 
       &:focus {
@@ -89,6 +84,18 @@
     & button {
       flex: 0 0 18%;
       margin: auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .form-wrapper {
+    padding: 0 0 50px 0;
+  }
+
+  .form-box {
+    form input {
+      flex: 0 0 47%;
     }
   }
 }

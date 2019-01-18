@@ -23,7 +23,10 @@ $(document).ready(function() {
       0: {
         items: 1
       },
-      600: {
+      576: {
+        items: 2
+      },
+      768: {
         items: 3
       },
       1200: {
@@ -40,9 +43,6 @@ $(document).ready(function() {
     responsive: {
       0: {
         items: 1
-      },
-      600: {
-        items: 3
       },
       1200: {
         items: 2

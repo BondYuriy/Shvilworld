@@ -1,12 +1,12 @@
 .catalog-card {
-  height: 575px; //================================
+  height: 575px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   background-color: $white;
   text-align: center;
   overflow: hidden;
 
   & .catalog-card_img {
-    height: 358px; //===============================
+    height: 358px;
     position: relative;
 
     & img {
@@ -45,5 +45,15 @@
 
   & .catalog-card_info {
     padding: 10px 24px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .catalog-card {
+    height: 600px;
+
+    & .catalog-card_img {
+      height: 290px;
+    }
   }
 }
