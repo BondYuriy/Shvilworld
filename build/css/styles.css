@@ -6727,7 +6727,6 @@ a:hover {
 }
 
 .planner-slider .slider-2 .item {
-	background-color: palevioletred;
 	height: 358px;
 }
 
@@ -12100,6 +12099,9 @@ body.sticky-header .header .header-box .navigations {
 	padding: 0;
 	text-align: center;
 	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .gallery .active-item {
