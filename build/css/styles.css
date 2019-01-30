@@ -6452,18 +6452,20 @@ a:hover {
 	color: #fff;
 }
 
-.logo-box {
+.logo a {
+	display: block;
 	width: 120px;
+	height: 135px;
 }
 
-.logo-box img {
+.logo img {
 	display: block;
 	width: 89px;
 	height: 89px;
 	margin: 0 auto 10px auto;
 }
 
-.logo-box span {
+.logo span {
 	color: #fff;
 	font-family: "Rubik", sans-serif;
 	font-size: 25px;
@@ -7566,6 +7568,7 @@ a:hover {
 	top: 32px;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+	z-index: 2;
 }
 
 .header .header-box .navigations {
@@ -11683,13 +11686,13 @@ body.sticky-header .header .header-box .navigations {
 	top: 10px;
 }
 
-.header .header-box .logo a .logo-box img {
+.header .header-box .logo a img {
 	width: 50px;
 	height: 50px;
 	margin-bottom: 0;
 }
 
-.header .header-box .logo a .logo-box span {
+.header .header-box .logo a span {
 	display: block;
 	font-size: 16px;
 	text-align: center;

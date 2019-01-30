@@ -1,5 +1,9 @@
-.logo-box {
-  width: 120px;
+.logo {
+  & a {
+    display: block;
+    width: 120px;
+    height: 135px;
+  }
 
   & img {
     display: block;
