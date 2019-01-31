@@ -34,15 +34,3 @@
     }
   }
 }
-
-@media (max-width: 991px) {
-  .service-wrapper {
-    & .service {
-      padding: 20px 0 70px 0;
-
-      & .service-block {
-        margin-bottom: 70px;
-      }
-    }
-  }
-}

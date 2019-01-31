@@ -56,28 +56,3 @@
     }
   }
 }
-
-@media (max-width: 991px) {
-  .product-card {
-    flex-wrap: wrap;
-    justify-content: center;
-
-    & .product-card_img {
-      margin-bottom: 30px;
-    }
-
-    & .product-card_info {
-      flex: 0 0 100%;
-
-      & h3 {
-        text-align: center;
-      }
-    }
-  }
-}
-
-@media (max-width: 1199px) {
-  .product-card .product-card_info {
-    flex: 0 0 68%;
-  }
-}

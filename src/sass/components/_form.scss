@@ -87,25 +87,3 @@
     }
   }
 }
-
-@media (max-width: 767px) {
-  .form-wrapper {
-    padding: 30px 0 50px 0;
-
-    & .form-box form input {
-      flex: 0 0 100%;
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .form-wrapper {
-    padding: 0 0 50px 0;
-  }
-
-  .form-box {
-    & form input {
-      flex: 0 0 47%;
-    }
-  }
-}
